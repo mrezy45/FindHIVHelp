@@ -380,20 +380,20 @@ section h2 {
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1.2rem 6%;
+    padding: 1.2rem 8%;
   }
 
   .logo {
     font-size: 1.3rem;
     margin-right: 0.5rem;
-     /* allow logo to shrink if needed */
+    flex-shrink: 1; /* allow logo to shrink if needed */
     min-width: 0;
   }
 
   .nav-buttons .btn {
     padding: 0.8rem 0.8rem;
     font-size: 0.9rem;
-     /* allow buttons to shrink slightly */
+    flex-shrink: 1; /* allow buttons to shrink slightly */
     min-width: 0;
   }
 
