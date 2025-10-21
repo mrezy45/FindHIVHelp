@@ -1,0 +1,416 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0077cc;
+}
+
+.nav-buttons .btn {
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.support {
+  background-color: transparent;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+}
+
+.support:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.login {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.login:hover {
+  background-color: #005fa3;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 8rem 8% 8rem;
+  background: linear-gradient(120deg, #e8f3ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.search-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 0.8rem 2rem;
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #005fa3;
+}
+
+/* ===== General Section Styles ===== */
+section {
+  padding: 4rem 5%;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== About Section ===== */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ===== How It Works ===== */
+.how-it-works .steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.step h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== Featured Medications ===== */
+.featured .med-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.med-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.med-card:hover {
+  transform: translateY(-5px);
+}
+
+.med-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.med-card p {
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status.available {
+  background-color: #d1f2e0;
+  color: #007f4f;
+}
+
+.status.limited {
+  background-color: #fff4d1;
+  color: #b58b00;
+}
+
+/* ===== For Pharmacists Section ===== */
+.for-pharmacists {
+  background: linear-gradient(120deg, #e8f3ff, #ffffff);
+  padding: 4rem 5%;
+}
+
+.pharmacists-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pharmacists-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.pharmacists-text h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.pharmacists-text p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.benefits-list li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  background-color: #f9fbff;
+  padding: 0.6rem 1rem;
+  border-left: 4px solid #0077cc;
+  border-radius: 6px;
+}
+
+.join-btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Image styling */
+.pharmacists-image {
+  flex: 1;
+  text-align: center;
+}
+
+.pharmacists-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Testimonials Section ===== */
+.testimonials .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  color: #003366;
+  font-weight: 600;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 5%;
+  margin-top: 4rem;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content p {
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem;
+  font-size: 0.95rem;
+  color: #d9e6f2;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.7rem;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #66b3ff;
+}
+
+.footer p.copyright {
+  font-size: 0.85rem;
+  color: #b3cce6;
+}
+
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .search-form input {
+    width: 100%;
+  }
+  
+    section {
+    padding: 3rem 6%;
+  }
+
+  .pharmacists-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pharmacists-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .join-btn {
+    margin-top: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    padding: 2.5rem 6%;
+  }
+}
+
+
+
