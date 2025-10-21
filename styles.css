@@ -391,7 +391,7 @@ section h2 {
   }
 
   .nav-buttons .btn {
-    padding: 0.3rem 1.0rem;
+    padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
     flex-shrink: 1; /* allow buttons to shrink slightly */
     min-width: 0;
