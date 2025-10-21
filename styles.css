@@ -386,14 +386,14 @@ section h2 {
   .logo {
     font-size: 1.3rem;
     margin-right: 0.5rem;
-    flex-shrink: 1; /* allow logo to shrink if needed */
+     /* allow logo to shrink if needed */
     min-width: 0;
   }
 
   .nav-buttons .btn {
     padding: 0.8rem 0.8rem;
     font-size: 0.9rem;
-    flex-shrink: 1; /* allow buttons to shrink slightly */
+     /* allow buttons to shrink slightly */
     min-width: 0;
   }
 
