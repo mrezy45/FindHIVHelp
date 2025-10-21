@@ -379,7 +379,27 @@ section h2 {
 
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
-  .hero h1 {
+  .navbar {
+    flex-direction: column; /* stack logo and buttons vertically */
+    align-items: center;
+    padding: 1rem 2%;
+    gap: 1rem; /* space between logo and buttons */
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: row; /* buttons stay side by side */
+    gap: 1rem; /* space between Support and Login */
+    flex-wrap: nowrap; /* prevent wrapping */
+  }
+
+  .nav-buttons .btn {
+    width: auto; /* ensure buttons stay inline */
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+    .hero h1 {
     font-size: 2.5rem;
   }
   .search-form input {
