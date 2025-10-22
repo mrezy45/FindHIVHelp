@@ -380,7 +380,7 @@ section h2 {
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
    .navbar {
-    padding: 10px 6%;
+    padding: 10px 5%;
   }
 
   .navbar .logo {
@@ -392,7 +392,7 @@ section h2 {
   }
 
   .nav-buttons .btn {
-    padding: 0.4rem 0.8rem;
+    padding: 0.4rem 0.6rem;
     font-size: 0.85rem;
   }
   
